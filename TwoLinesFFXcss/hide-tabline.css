@@ -1,0 +1,47 @@
+#navigator-toolbox {
+	-moz-window-dragging: drag;
+}
+
+#titlebar {
+	appearance: none !important;
+}
+
+#TabsToolbar .toolbar-items {
+	display: none !important;
+}
+
+#TabsToolbar.browser-toolbar {
+	display: block !important;
+	position: absolute;
+	right: 0;
+	top: calc((var(--navbar-height) - 16px) / 2);
+}
+
+#nav-bar {
+	margin-right: 100px;
+	padding: calc((var(--navbar-height) - 40px) / 2) 0;
+}
+
+#urlbar {
+	--urlbar-height: 34px !important;
+	--urlbar-toolbar-height: 34px !important;
+	z-index: 200 !important;
+	
+}
+
+#urlbar-input::placeholder {
+    opacity: 0.2 !important;
+}
+/*
+#urlbar-background, #searchbar {
+	--toolbar-field-background-color: yellow !important;
+	
+}*/
+
+#urlbar-background {
+	background-color: var(--bg-primary) !important; 
+}
+
+#tracking-protection-icon-container {
+	display: none !important;
+}

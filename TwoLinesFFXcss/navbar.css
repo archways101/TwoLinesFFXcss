@@ -1,0 +1,48 @@
+#tabbrowser-tabs:not([noshadowfortests])
+	.tab-background:is([selected], [multiselected]) {
+	box-shadow: none !important;
+}
+
+#tabbrowser-tabs {
+}
+
+.tab-background {
+	border: none !important;
+}
+
+.tabbrowser-tab:hover
+	> .tab-stack
+	> .tab-background:not([selected='true'], [multiselected]) {
+	background-color: var(--bg-hover-light) !important;
+}
+
+#urlbar[open] > #urlbar-background {
+	box-shadow: none !important; 
+	border-radius: var(--roundness) !important;
+	border-color: none !important;
+}
+
+#urlbar[closed] > #urlbar-background {
+	/* box-shadow: var(--shadow) !important; */
+	border-radius: var(--roundness) !important;
+}
+
+#navigator-toolbox {
+	background-color: var(--bg-primary) !important;
+	border-bottom: none !important;
+}
+
+#navigator-toolbox::after {
+	border-bottom: 0px !important;
+}
+
+.checkbox-check {
+	border-radius: var(--roundness-tiny) !important;
+}
+
+/*removes back and forward button */
+#back-button, #forward-button, #star-button, #identity-box {
+	display: none !important;
+}
+
+
